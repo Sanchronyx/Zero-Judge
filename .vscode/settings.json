@@ -58,6 +58,7 @@
         "optional": "cpp",
         "iomanip": "cpp",
         "stack": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "set": "cpp"
     }
 }

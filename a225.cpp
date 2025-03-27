@@ -13,7 +13,16 @@ int main(void){
         }
         for (int i = 0; i < num - 1; i++){
             for (int j = 0; j < num - i - 1; j++){
-                if ((arr[j] % 10) > (arr[j+1] % 10))swap(arr[j], arr[j+1]);
+                if ((arr[j] % 10) > (arr[j+1] % 10)){
+                    if ((arr[j] % 10) == (arr[j+1] % 10)){
+                        if (arr[j] > arr[j+1])swap(arr[j], arr[j+1]);
+                        continue;
+                    }
+                    swap(arr[j], arr[j+1]);
+                } 
+                else if (arr[j] % 10 == arr[j+1] % 10){
+                    if (arr[j] < arr[j+1])swap(arr[j], arr[j+1]);
+                }
             }
         }
         for (int i = 0; i < num; i++){

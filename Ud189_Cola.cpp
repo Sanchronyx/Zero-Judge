@@ -2,11 +2,11 @@
 using namespace std;
 
 int main(void){
-    int cola{0}, count{0}, temp{0};
+    int cola{0};
     while (cin >> cola){
+        int count{0};
         while (cola > 0){
             count += cola;
-            temp += 1;
             cola /= 3;
         }
         cout << count << endl;
